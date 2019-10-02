@@ -19,3 +19,17 @@ for i in range(0,15+1,1) :
         count = count + ((j[i+1] - j[i] + 1)//2)*(p - (i+1))
 #        print(count)
 print(count)
+
+# a much more simpler code and efficient code
+import math
+sum1 = 0
+a = 4444444444
+for i in range(0,20):
+    b = 4**i
+    c = b*2
+    d = (a - b)/(c)
+    sum1 = sum1 + (math.floor(d)+1)
+    
+print(d)
+print(sum1)
+    
