@@ -1,4 +1,4 @@
-# This script sends the "Block me permanently!" message to a person on my WhatsApp. The web WhatsApp window(or the browser) should not be minimized.
+# This script sends a message to a person on my WhatsApp multiple times. The web WhatsApp window(or the browser) should not be minimized.
 # Compilation: > python sendwhatsapp.py
 # Before compilation, you need the following packages, for which you need to run the following commands:
 # sudo apt install python3-pip
@@ -24,7 +24,7 @@ while count <= 100:
     current_minute = now.minute
 
     # Send the message
-    pywhatkit.sendwhatmsg("+916378175194", "Block me permanently!", current_hour, current_minute + 1, 15)
+    pywhatkit.sendwhatmsg("+xxxxxxxxxxxx", "<Message to be sent>", current_hour, current_minute + 1, 15)
 
     # Press the Enter key after sending the control to the WhatsApp window (should not be minimized) 
     pyautogui.moveTo(screen_width * 0.694, screen_height * 0.964)
